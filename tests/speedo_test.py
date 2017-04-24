@@ -59,3 +59,9 @@ def test_a_book_and_report_ppm():
 def test_array_of_books():
     books = ['Harry Potter', 'Twilight']
     assert len(books) == 2
+
+#this is supposed to test if the title input can be entered as a string
+def test_input_of_each_descriptor():
+    title = ""
+    input = ""
+    assert title == input
