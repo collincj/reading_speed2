@@ -4,7 +4,7 @@
 def calc_ppm(pages, minutes):
     return pages/minutes
 
-class Book: #creates Book as a class which can house functions and var
+class Book: #creates Book as a class which can house functions and variables
 
     def __init__(self, pform=None, title=None, pages=None, minutes=None): #has to be matched exactly on the test page
         if pform is None:
@@ -22,6 +22,10 @@ class Book: #creates Book as a class which can house functions and var
 
     def ppm(self):
         return self.pages / self.minutes
+
+
+
+
 #an attempt at a Library class
 #class Library:
     #books = [] #empty list of books in our Library
