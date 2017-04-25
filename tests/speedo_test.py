@@ -56,7 +56,7 @@ def test_a_book_and_report_ppm():
     assert harry_potter.ppm() == 1
 
 #test to create an array of books
-def test_array_of_books():
+def test_length_array_of_books():
     books = ['Harry Potter', 'Twilight']
     assert len(books) == 2
 

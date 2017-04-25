@@ -6,29 +6,34 @@ def calc_ppm(pages, minutes):
 
 class Book: #creates Book as a class which can house functions and variables
 
-    def __init__(self, pform=None, title=None, pages=None, minutes=None): #has to be matched exactly on the test page
+#Statistics regarding books. The books have the following properties:
+
+#Attributes:
+    #pform: the platform of the book.
+    #title: the title of the book.
+    #pages: how many pages the user read.
+    #minutes: how long it took the user to read said pages.
+    #books: number of books
+
+    def __init__(self, pform=None, title=None, pages=None, minutes=None, books=None): #has to be matched exactly on the test page
         if pform is None:
             pform = "print" # default platform value
         self.platform = pform # takes special init function and sets it equal to the value that gets passed
         if title is None:
-            title = "unknown" #defalt title value
+            title = "unknown" #default title value
         self.title = title
         if pages is None:
             pages = 100 #default pages read
         self.pages = pages
         if minutes is None:
-            minutes = 100 #defailt minutes read
+            minutes = 100 #default minutes read
         self.minutes = minutes
+        if books is None:
+            books = 1
+        self.books = books
 
     def ppm(self):
         return self.pages / self.minutes
-
-#I want to make this so you can input the book title on the command line
-    def input(title):
-        return title
-
-
-
 
 #an attempt at a Library class
 #class Library:
